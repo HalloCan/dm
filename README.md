@@ -3,14 +3,17 @@ A fast and user-friendly script for initiating and halting Docker containers for
 
 ---
 
-**WARNING**
+## **WARNING**
 
 *This script requires root privileges. Before you run it, make sure you've checked the followings:*
  
   + Username is "root"(for privilege validation only).
   + Docker and whereis is installed and Docker can be recognized by *whereis*.
+  + This script has been added with executable permissions.
+  + > chmod +x dm
 
-**Instructions**
+## **Instructions**
+
 This script will present a menu like this:
 > 1:stop all containers
 > 
@@ -47,20 +50,23 @@ Like: typing "dm -sa", dm will stop all contailers and not show the menu.
 ---
 
 # dm
-一个快速、用户友好用于启动和停止 Linux 下 Docker 容器的脚本。
+一个快速、用户友好用于启动和停止 Linux 下 Docker 容器的脚本.
 
 ~不是那个dm,这里没有第五人格~
 
 ---
 
-**用前提醒**
+## **用前提醒**
 
 *这个脚本需要Root权限，请确保以下事项满足后使用:*
  
   + 用户名是"root"(仅供权限识别).
   + Docker和whereis被正确安装，且Docker可以被*whereis*识别.
+  + 此脚本已被添加可执行权限.
+  + >chmod +x dm
 
-**指南**
+## **指南**
+
 脚本菜单如下:
 > 1:stop all containers(停止所有容器)
 > 
@@ -78,18 +84,18 @@ Like: typing "dm -sa", dm will stop all contailers and not show the menu.
 
 选择"5:stop who?"的菜单同上.
 
-脚本不会停止，直到你给出一个错误的参数或者你选择了"6:exit"。
+脚本不会停止，直到你给出一个错误的参数或者你选择了"6:exit".
 
 该脚本可用于在启动时附加一个参数，从而快速开启一项功能:
 
->-sa: 停止所有正在运行的 Docker 容器。
+>-sa: 停止所有正在运行的 Docker 容器.
 >
->-r <container_name>: 启动指定名称的 Docker 容器。
+>-r <container_name>: 启动指定名称的 Docker 容器.
 >
->-s: 停止一个指定的 Docker 容器。
+>-s: 停止一个指定的 Docker 容器.
 >
->-h: 显示帮助信息。
+>-h: 显示帮助信息.
 >
 比如: 输入"dm -sa", dm会直接停止所有容器而不显示菜单.
 
-## ***为程序或脚本赋予 root 权限是非常危险的操作，请确保脚本未被恶意修改！***
+## ***为程序或脚本赋予 root 权限是非常危险的操作，请确保脚本未被恶意修改!***
